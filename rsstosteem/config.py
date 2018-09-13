@@ -13,5 +13,5 @@ steemaccount=''
 steemkey=''
 
 # Website RSS source
-rssurl=''
+rssurl='https://solarcoin.org/en/slr-news.xml'
 

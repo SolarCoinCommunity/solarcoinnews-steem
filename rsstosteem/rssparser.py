@@ -1,15 +1,14 @@
-
-import config
+import rsstosteem.config as config
 
 import feedparser
 
-parse = feedparser.parse(rssurl)
+parse = feedparser.parse(config.rssurl)
 
-def buildlist:
-    posts=parse.entries
+
+def buildlist():
+    links = []
+    posts = parse.entries
     for post in posts:
-        links.additem(post.link)
+        links.append(post.link)
 
     return links
-
-
