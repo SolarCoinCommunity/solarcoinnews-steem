@@ -7,5 +7,9 @@ from steem import Steem
 steemaccount=Steem(keys=[config.steemaccount, config.steemkey])
 
 Scrap = DrupalScrap()
-Steem.post(article)
+try:
+    Steem.post(article)
+except:
+    print("An exception ocurred")
+
 
