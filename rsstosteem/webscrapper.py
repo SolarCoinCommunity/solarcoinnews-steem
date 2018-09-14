@@ -26,7 +26,7 @@ def DrupalScrap():
             article_markdown = Tmod(article_box).markdown
             header_box = Tmod(header_box).markdown
             permalink_nospace =header_box.replace(" ", "_")
-            permalink = permalink_nospace.lowercase()
+            permalink = permalink_nospace.lower()
             article = (header_box, article_box, permalink)
     return article
 
