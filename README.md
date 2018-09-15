@@ -9,13 +9,14 @@ This will keep the communication at a more current pace on different channels an
 The project is built completely in Python 3.x
 
 # ToDo
-- test the link list from feed
+- ~~test the link list from feed~~
 - create the parser for the SolarCoin website with BS4
-- create the filtering from HTML content that has images
+- ~~create the filtering from HTML content that has images~~
 - format HTML to Markdown without the possible images and embeded elements
-- reformat images to markdown
+- ~~reformat images to markdown~~
 - create Steemit publisher
 
 # Commiters
 
 * JZA - jza@bitcuners.org
+* Biaku - tavo_x99@hotmail.com
