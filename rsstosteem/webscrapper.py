@@ -1,12 +1,12 @@
 #!/usr/env python
 
-import rsstosteem.config as config
-from rsstosteem.rssparser import buildlist
+import config
+from rssparser import buildlist
 
 import urllib.request as req
 
 from bs4 import BeautifulSoup
-from tmod import Tmod
+from tomd import Tomd
 
 
 # Function to scrap the content from the SolarCoin site
@@ -23,10 +23,11 @@ def DrupalScrap():
                 img.decompose()
             header_box = soup.find('div', attrs={'class': 'page-title'})
             article_box = soup.find('div', attrs={'class': 'node__content'})
-            article_markdown = Tmod(article_box).markdown
-            header_box = Tmod(header_box).markdown
+            article_markdown = Tomd(article_box).markdown
+            header_box = Tomd(header_box).markdown
             permalink_nospace =header_box.replace(" ", "_")
             permalink = permalink_nospace.lower()
-            article = (header_box, article_box, permalink)
+            article = [header_box, article_box, permalink]
     return article
 
+print(DrupalScrap())
