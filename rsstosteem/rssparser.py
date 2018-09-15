@@ -1,4 +1,4 @@
-import rsstosteem.config as config
+import config
 
 import feedparser
 
