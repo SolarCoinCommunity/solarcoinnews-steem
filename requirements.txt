@@ -24,7 +24,7 @@ steem-connect==0.7.3
 steempy==0.19.2
 tomd==0.1.3
 toolz==0.9.0
-ujson==1.35
+ujson==5.2.0
 urllib3==1.23
 voluptuous==0.11.5
 w3lib==1.19.0
